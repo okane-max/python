@@ -5,7 +5,8 @@ try:
     pindala = (raadius**2)*3.14
     umbermoot = 2*raadius*3.14
     print(f"Ringi pindala on {pindala:0.2f} ja ümbermõõt on {umbermoot:0.2f}")
-    
+    turtle.circle(raadius,360)
+    turtle.done()
 except:
     print("Kontrolli sisestust!")
 
