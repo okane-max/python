@@ -1,3 +1,7 @@
+#harjutus4_5
+
+
+
 #harjutus4_4
 try:
     maht = 5
@@ -7,6 +11,7 @@ try:
     print("Saad teha " + str(kinkekarbid) + " täis kinkekasti. Üle jääb " + str(ulejaak) + "kingitust.")
 except:
     print("Kontrolli sisestust!")
+
 
 #harjutus4_2
 ale = 0.3
