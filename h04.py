@@ -29,7 +29,7 @@ def harjutus4_4():
 
 def harjutus4_5():
     try:
-        raadius = int(input("Sisestage ringi raadius: "))
+        raadius = float(input("Sisestage ringi raadius: "))
         pindala = (raadius**2)*3.14
         umbermoot = 2*raadius*3.14
         print(f"Ringi pindala on {pindala:0.2f} ja ümbermõõt on {umbermoot:0.2f}")
