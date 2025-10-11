@@ -1,5 +1,13 @@
 #harjutus4_5
-
+import turtle
+try:
+    raadius = int(input("Sisestage ringi raadius: "))
+    pindala = (raadius**2)*3.14
+    umbermoot = 2*raadius*3.14
+    print(f"Ringi pindala on {pindala:0.2f} ja ümbermõõt on {umbermoot:0.2f}")
+    
+except:
+    print("Kontrolli sisestust!")
 
 
 #harjutus4_4
