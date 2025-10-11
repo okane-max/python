@@ -33,7 +33,13 @@ def harjutus4_5():
         pindala = (raadius**2)*3.14
         umbermoot = 2*raadius*3.14
         print(f"Ringi pindala on {pindala:0.2f} ja ümbermõõt on {umbermoot:0.2f}")
-        turtle.circle(raadius,360)
+        turtle.circle(raadius)
         turtle.done()
     except:
         print("Kontrolli sisestust!")
+
+#Harjutused kutsu välja siin:
+#harjutus4_1
+#harjutus4_2
+#harjutus4_4
+#harjutus4_5
