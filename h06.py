@@ -14,6 +14,8 @@ def harjutus6_1():
     turtle.lt(90+nurk)
     turtle.fd(hypotenuus)
     turtle.done()
-
+    
+    
+#Harjutused kutsu välja siin:
 #harjutus6_1()
     
