@@ -44,10 +44,9 @@ def harjutus5_4():
         if arva.lower() == "kull" or "kiri":
             if arva.lower() == "kull" and munt == 0:
                 turtle.pencolor("green")
-                turtle.circle(100)
             else:
                 turtle.pencolor("red")
-                turtle.circle(100)
+            turtle.circle(100)    
             turtle.done()
         else:
             print("Kontrollige sisestust!")
