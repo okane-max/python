@@ -39,7 +39,7 @@ def harjutus4_5():
         print("Kontrolli sisestust!")
 
 #Harjutused kutsu välja siin:
-#harjutus4_1
-#harjutus4_2
-#harjutus4_4
-#harjutus4_5
+#harjutus4_1()
+#harjutus4_2()
+#harjutus4_4()
+#harjutus4_5()
