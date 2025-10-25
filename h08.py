@@ -27,8 +27,9 @@ def harjutus8_1():
     telefonid['Oliver'] = '5058505'
     del telefonid['Kristi']
     telefonid['Eva'] = '5555555'
-    print(telefonid.values())
-    otsitu = input("Kirjutage isiku nimi kelle telefoni numbrit otsite: ")
+    for i in telefonid:
+        print(telefonid[i])
+    otsitu = input("Kirjutage isiku nimi kelle telefoni numbrit otsite: ").capitalize()
     if otsitu in telefonid.keys():
         print(str(otsitu) + " telefoni number on " + telefonid[otsitu])
     else:
@@ -48,18 +49,18 @@ def harjutus8_2():
     'apelsinid': {'kogus': 40, 'hind': 0.99},
     'banaanid': {'kogus': 23, 'hind': 1.29}
     }
-    print(tooted['piim']['kogus'])
 
-    toode = input("Sisestage toode mida soovite osta: ")
-    kogus = int(input("Sisestage kogus mida te soovite osta: "))
-    if toode in tooted.keys():
-        if tooted[toode]['kogus'] >= kogus:
-            print("Teie ost läheb maksma " + str(kogus*tooted[toode]['hind']) + " eurot")
-            tooted[toode]['kogus'] -= kogus
-            print(tooted)
+    try:
+        toode = input("Sisestage toode mida soovite osta: ").lower()
+        kogus = int(input("Sisestage kogus mida te soovite osta: "))
+        if toode in tooted.keys():
+            if tooted[toode]['kogus'] >= kogus:
+                print("Teie ost läheb maksma " + str(kogus*tooted[toode]['hind']) + " eurot")
+                tooted[toode]['kogus'] -= kogus
+                print(tooted)
+            else:
+                print("Toodet ei ole piisavalt")
         else:
-            print("Toodet ei ole piisavalt")
-    else:
-        print("Toodet ei leitud")
-
-
+            print("Toodet ei leitud")
+    except:
+        print("Kontrollige sisestust")
