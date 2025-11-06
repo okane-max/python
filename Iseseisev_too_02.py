@@ -37,7 +37,8 @@ def maja(x,y,pikkus,ukse_korgus):
     katus(x,y,pikkus)
     seinad(x,y,pikkus)
 
-pikkus = 175
+#maja ruudu külje pikkus
+pikkus = 75
 x = pikkus+pikkus/4
 y = 0
 
