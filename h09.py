@@ -70,9 +70,9 @@ def harjutus9_13():
             h_kokku += int(i[2])
             if int(i[1]) > 300:
                 suurem.append(i[0])
+
     print("Keskmine ulatus: " + str(u_kokku/10) +"\n"+ "Keskmine hind: " + str(h_kokku/10))
     print("Läbisõidu ulatus on suurem kui 300 km")
     for i in suurem:
         print(i)
     print("Parima hinnaga auto: " + str(parim_auto))
-harjutus9_13()
